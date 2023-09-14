@@ -2,10 +2,49 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows1251">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <title><?php echo $title; ?></title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e4878a7996.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="main-container">
+        <header class="header-container">
+            <div class="container-logo">
+                <a href="#"><img src="img/main_logo.png" class="main-logo"></a>
+            </div>
+            
 
+            <nav class="header-menu-container">
+                <div class="inner-menu">
+                    <div class="toggle-btn">
+                        <i class="fa-solid fa-bars toggle-icon"></i>
+                    </div>
+                    <div class="dropdown-menu">
+                        <?php
+                            foreach ($GLOBALS['arrContent'] as $key=>$value) {
+                                echo '<li class="menu-item"><a href="?'.GET_ID_SECTION.'='.$key.'" class="menu-link">'.$value.'</a></li>';
+                            }
+                        ?>
+                    </div>
+                    <ul class="menu-list">
+                        <?php
+                            foreach ($GLOBALS['arrContent'] as $key=>$value) {
+                                echo '<li class="menu-item"><a href="?'.GET_ID_SECTION.'='.$key.'" class="menu-link">'.$value.'</a></li>';
+                            }
+                        ?>
+                    </ul>
+                    <div class="link-enter">
+                        <i class="fa-regular fa-user"></i>
+                        <li class="menu-item"><a href="#" class="menu-link">войти</a></li>
+                    </div>
+                </div>
+            </nav>
+            <script src="js/drop_down_menu.js"></script>
+        </header>
+    </div>
 </body>
 </html>
