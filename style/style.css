@@ -70,15 +70,16 @@
   top: 51px;
   left: 80px;
   transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  overflow: hidden; }
+  overflow: hidden;
+  backdrop-filter: blur(15px); }
   .dropdown-menu .menu-item {
     width: 400px;
     background-color: rgba(33, 34, 41, 0.849);
-    backdrop-filter: blur(15px);
     display: flex;
     justify-content: center; }
     .dropdown-menu .menu-item:last-child {
-      border-radius: 0 0 15px 15px; }
+      border-radius: 0 0 15px 15px;
+      border-bottom: 3px solid #FF7679; }
     @media (max-width: 550px) {
       .dropdown-menu .menu-item {
         width: 100%; } }
@@ -91,7 +92,7 @@
       left: 0; } }
 
 .open {
-  height: 255px; }
+  height: 258px; }
 
 .menu-item {
   list-style: none;
@@ -106,3 +107,72 @@
     padding-left: 10px; }
   .menu-item :hover {
     color: #FF7679; }
+
+footer {
+  width: 100%;
+  background-color: #14141a;
+  border-top: 3px solid #FF7679; }
+
+.footer-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 60px 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  .footer-container .footer-logo {
+    width: 160px; }
+  .footer-container .main-cell li {
+    font-weight: 200;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 14px;
+    list-style: none; }
+  .footer-container .main-cell a {
+    text-decoration: none; }
+    .footer-container .main-cell a:hover {
+      color: #FF7679; }
+  @media (max-width: 1200px) {
+    .footer-container .main-cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; } }
+  @media (max-width: 1200px) {
+    .footer-container .cell-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
+  @media (max-width: 1200px) {
+    .footer-container .cell-links {
+      width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; } }
+  .footer-container .cell-title {
+    text-transform: uppercase;
+    color: #5f5f5f;
+    margin-bottom: 14px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px; }
+  .footer-container .cell-information {
+    font-weight: 200;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 14px; }
+  .footer-container .footer-social-link {
+    width: 30px;
+    margin-right: 30px; }
+    @media (max-width: 1200px) {
+      .footer-container .footer-social-link {
+        margin: 0; } }
+  @media (max-width: 1200px) {
+    .footer-container {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 20px;
+      padding: 20px 25px; } }
+  @media (max-width: 580px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+      padding: 20px 25px; } }
