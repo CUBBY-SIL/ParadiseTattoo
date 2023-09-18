@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=windows1251">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <title><?php echo $title; ?></title>
+<link rel="stylesheet" href="style/swiper-bundle.min.css">
 <link rel="stylesheet" href="style/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,6 +46,12 @@
             </nav>
             <script src="js/drop_down_menu.js"></script>
         </header>
+
+        <section class="content">
+            <?php
+                include($fileContent);
+            ?>
+        </section>
 
         <footer>
             <div class="footer-container">
