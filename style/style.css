@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif; }
 
+a {
+  text-decoration: none; }
+
 body {
   background-image: url(/img/background_image.jpg);
   background-position: center; }
@@ -296,6 +299,99 @@ body {
     @media (max-width: 500px) {
       .content .container-works {
         margin: 0 20px; } }
+  .content .container-styles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 35px; }
+    .content .container-styles .box-style {
+      width: calc(100% / 2 - 40px / 2);
+      border-radius: 10px;
+      border: 1px solid #FF7679;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 40px; }
+      .content .container-styles .box-style .box-style-tittle {
+        font-size: 45px;
+        font-weight: 600; }
+        @media (max-width: 1070px) {
+          .content .container-styles .box-style .box-style-tittle {
+            font-size: 40px; } }
+        @media (max-width: 655px) {
+          .content .container-styles .box-style .box-style-tittle {
+            font-size: 26px; } }
+      .content .container-styles .box-style .box-style-information {
+        font-size: 18px;
+        font-weight: 100; }
+        @media (max-width: 1070px) {
+          .content .container-styles .box-style .box-style-information {
+            font-size: 16px; } }
+      .content .container-styles .box-style .link-read-style {
+        width: 170px; }
+        .content .container-styles .box-style .link-read-style .box-style-button {
+          background-color: rgba(238, 29, 35, 0.5);
+          border-radius: 5px;
+          border-style: solid;
+          border: 2px solid #ee1d23;
+          padding: 8px 50px;
+          transition: 0.3s linear;
+          color: #fff; }
+          .content .container-styles .box-style .link-read-style .box-style-button:hover {
+            background-color: #ee1d23; }
+      @media (max-width: 1070px) {
+        .content .container-styles .box-style {
+          row-gap: 25px; } }
+      @media (max-width: 980px) {
+        .content .container-styles .box-style {
+          width: calc(100% / 2 - 25px / 2); } }
+      @media (max-width: 730px) {
+        .content .container-styles .box-style {
+          width: 100%; } }
+      @media (max-width: 655px) {
+        .content .container-styles .box-style {
+          padding: 25px 35px;
+          row-gap: 15px; } }
+      @media (max-width: 530px) {
+        .content .container-styles .box-style {
+          padding: 25px 25px; } }
+    @media (max-width: 980px) {
+      .content .container-styles {
+        column-gap: 25px;
+        row-gap: 25px; } }
+    @media (max-width: 730px) {
+      .content .container-styles {
+        column-gap: 0; } }
+    .content .container-styles .polynesia {
+      background-image: url(/img/styles/style_pol.jpg);
+      background-position: center;
+      background-size: cover; }
+    .content .container-styles .sketch {
+      background-image: url(/img/styles/style_ske.jpg);
+      background-position: center;
+      background-size: cover; }
+    .content .container-styles .celtic {
+      background-image: url(/img/styles/style_kel.jpg);
+      background-position: center;
+      background-size: cover; }
+    .content .container-styles .realism {
+      background-image: url(/img/styles/style_real.jpg);
+      background-position: center;
+      background-size: cover; }
+    .content .container-styles .watercolour {
+      background-image: url(/img/styles/style_akv.jpg);
+      background-position: center;
+      background-size: cover; }
+    .content .container-styles .blackwork {
+      background-image: url(/img/styles/style_black.jpg);
+      background-position: center;
+      background-size: cover; }
+    .content .container-styles .minimalism {
+      background-image: url(/img/styles/style_min.jpg);
+      background-position: center;
+      background-size: cover; }
   @media (max-width: 1150px) {
     .content {
       row-gap: 40px; } }
