@@ -17,6 +17,9 @@ body{
 
 .main-container{
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 //HEADER AND NAVIGATION
@@ -161,6 +164,8 @@ body{
     align-items: center;
     row-gap: 60px;
     text-align: center;
+
+    flex: 1 0 auto;
 
     h1{
         font-size: 40px;
@@ -472,6 +477,8 @@ body{
         }
     }
 
+    
+
     @media(max-width:1150px){
         row-gap: 40px;
     }
@@ -517,6 +524,8 @@ footer{
     width: 100%;
     background-color: #14141a;
     border-top: 3px solid #FF7679;
+
+    flex: 0 0 auto;
 }
 .footer-container{
     max-width: 1350px;
@@ -545,7 +554,7 @@ footer{
         @media(max-width:1200px){
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             flex-direction: column;
         }
     }
