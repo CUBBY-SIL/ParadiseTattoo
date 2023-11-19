@@ -477,7 +477,35 @@ body{
         }
     }
 
-    
+    .container-delete-tattoo{
+        display: flex;
+        row-gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 100px;
+        .content-information{
+            font-size: 22px;
+            @media(max-width:550px){
+                font-size: 20px;
+            }
+        }
+        .box-style-button{
+            background-color: rgba(238, 29, 35, 0.5);
+            font-size: 20px;
+            border-radius: 5px;
+            border-style: solid;
+            border: 2px solid rgb(238, 29, 35);
+            padding: 8px 50px;
+            transition: 0.3s linear;
+            color: #fff;
+            &:hover{
+                background-color: rgb(238, 29, 35);
+            }
+        }
+        @media(max-width:1350px){
+            padding: 0;
+        }
+    }
 
     @media(max-width:1150px){
         row-gap: 40px;

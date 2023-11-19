@@ -396,6 +396,31 @@ body {
       background-image: url(/img/styles/style_min.jpg);
       background-position: center;
       background-size: cover; }
+  .content .container-delete-tattoo {
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 100px; }
+    .content .container-delete-tattoo .content-information {
+      font-size: 22px; }
+      @media (max-width: 550px) {
+        .content .container-delete-tattoo .content-information {
+          font-size: 20px; } }
+    .content .container-delete-tattoo .box-style-button {
+      background-color: rgba(238, 29, 35, 0.5);
+      font-size: 20px;
+      border-radius: 5px;
+      border-style: solid;
+      border: 2px solid #ee1d23;
+      padding: 8px 50px;
+      transition: 0.3s linear;
+      color: #fff; }
+      .content .container-delete-tattoo .box-style-button:hover {
+        background-color: #ee1d23; }
+    @media (max-width: 1350px) {
+      .content .container-delete-tattoo {
+        padding: 0; } }
   @media (max-width: 1150px) {
     .content {
       row-gap: 40px; } }
