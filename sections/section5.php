@@ -6,15 +6,17 @@
 
 </head>
     <body>
-        <h2 class="content-tittle"><span class="red-span">Удаление</span> татуировки</b></h2>
+        <h2 class="content-tittle"><span class="red-span">Удаление</span> татуировки</h2>
 
-        <div class="container-delete-tattoo">
+        <div class="container-text-title">
             <p class="content-information">Шрамы после удаления татуировок?</p>
 
             <p class="content-information"><span class="red-span">Нет, нет и ещё раз нет!</span></p>
 
             <p class="content-information">Есть такой стереотип, что после удаления тату всегда остаются шрамы, 
                 из-за чего люди и боятся идти на данную процедуру, но правда ли это?
+            </p>
+            
             <p class="content-information">Итак, начнём по порядку:</p>
 
             <p class="content-information"><span class="red-span">•</span> Наш специалист настраивает лазер индивидуально под каждого клиента,

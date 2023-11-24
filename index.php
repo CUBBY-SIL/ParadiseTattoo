@@ -11,7 +11,7 @@
 
     if(isset($_GET[GET_ID_SECTION])){
         
-        $idContent = (int)$_GET[GET_ID_SECTION];
+        $idContent = $_GET[GET_ID_SECTION];
         //Определяем путь к возможному подключаемому содержимому
         $fileContentTemp = DIR_INCLUDE_SECTIONS.'section'.$idContent.'.php';
         //Проверяем наличие файла на сервере
