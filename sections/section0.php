@@ -23,36 +23,45 @@
         <!-- SLIDER -->
         <div class="swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+                <div class="swiper-slide">
                 <img src="img/slider/slider-img-1.jpg" class="slider-img">
-              </div>
-              <div class="swiper-slide">
+                </div>
+                <div class="swiper-slide">
                 <img src="img/slider/slider-img-2.png" class="slider-img">
-              </div>
-              <div class="swiper-slide">
+                </div>
+                <div class="swiper-slide">
                 <img src="img/slider/slider-img-3.png" class="slider-img">
-              </div>
-              <div class="swiper-slide">
+                </div>
+                <div class="swiper-slide">
                 <img src="img/slider/slider-img-4.png" class="slider-img">
-              </div>
-              <div class="swiper-slide">
+                </div>
+                <div class="swiper-slide">
                 <img src="img/slider/slider-img-5.png" class="slider-img">
-              </div>
-              <div class="swiper-slide">
+                </div>
+                <div class="swiper-slide">
                 <img src="img/slider/slider-img-6.png" class="slider-img">
-              </div>
-              <div class="swiper-slide">
+                </div>
+                <div class="swiper-slide">
                 <img src="img/slider/slider-img-7.png" class="slider-img">
-              </div>
-              <div class="swiper-slide">
+                </div>
+                <div class="swiper-slide">
                 <img src="img/slider/slider-img-8.png" class="slider-img">
-              </div>
-              <div class="swiper-slide">
+                </div>
+                <div class="swiper-slide">
                 <img src="img/slider/slider-img-9.png" class="slider-img">
-              </div>
-            </div><!-- DIV SWIPER-WRAPPER -->
+                </div>
+                <div class="swiper-slide">
+                <img src="img/slider/slider-img-10.png" class="slider-img">
+                </div>
+                <div class="swiper-slide">
+                <img src="img/slider/slider-img-11.png" class="slider-img">
+                </div>
+                <div class="swiper-slide">
+                <img src="img/slider/slider-img-12.png" class="slider-img">
+                </div>
+            </div>
             <div class="swiper-pagination"></div>
-          
+            
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div><!-- DIV SWIPER -->
