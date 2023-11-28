@@ -18,8 +18,6 @@ body{
 .main-container{
     width: 100%;
     min-height: 100vh;
-    // display: flex;
-    // flex-direction: column;
 }
 
 //HEADER AND NAVIGATION
@@ -51,8 +49,9 @@ body{
 }
 .inner-menu{
     width: 1350px;
+    
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: auto auto;
     padding: 0 20px;
     position: relative;
 
@@ -204,9 +203,7 @@ body{
         font-weight: 200;
     }
 
-    .red-span{
-        color: #FF7679;
-    }
+    
 
     .container-elements{
         display: flex;
@@ -475,7 +472,9 @@ body{
             background-position: center;
             background-size: cover;
         }
-    }  
+    }
+    
+    
 
     @media(max-width:1150px){
         row-gap: 40px;
@@ -485,6 +484,241 @@ body{
         row-gap: 30px;
     }
 }
+
+.container-login{
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    border-radius: 35px;
+    background: #14141a;
+    border: 1px solid #FF7679;
+    padding: 25px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    .container-login__logo{
+        text-align: center;
+        margin-bottom: 50px;
+        padding: 0 45px;
+    }
+
+    .container-login-item{
+        width: 250px;
+        height: 50px;
+        color: #FF7679;
+        margin-bottom: 40px;
+        border-radius: 50px;
+        font-size: 18px;
+        border: 1px white solid;
+
+        fieldset{
+            input:nth-child(2), input:focus:first-child{
+                border-width: 0px;
+                outline:0;
+                box-shadow: none;
+                -moz-box-shadow: none;
+                -webkit-box-shadow: none;
+                background-color: transparent;
+            }
+
+            legend{
+                position: relative;
+                top: -25px;
+                left: -60px;
+            }
+        }
+
+        .item__el{
+            width: 90%;
+            height: 40px;
+            font-size: 20px;
+            color: white;
+            margin-left: 10px;
+            margin-top: -18px;
+        }
+    }
+
+    .btn-login{
+        border-radius: 35px;
+        border-width: 0px;
+        background-color: white;
+        padding: 15px 90px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        transition: 0.3s linear;
+        &:hover{
+            background-color: #FF7679;
+            border: 1px solid white;
+        }
+    }
+
+    .btn-into-reg{
+        background: none;
+        color: white;
+        font-size: 22px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+
+.container-registration{
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    border-radius: 35px;
+    background: white;
+    border: 1px solid #FF7679;
+    padding: 25px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    .container-registration__logo{
+        text-align: center;
+        margin-bottom: 50px;
+        padding: 0 45px;
+    }
+
+    .container-registration-item{
+        width: 250px;
+        height: 50px;
+        color: #FF7679;
+        margin-bottom: 50px;
+        border-radius: 50px;
+        font-size: 18px;
+        border: 1px black solid;
+
+        fieldset{
+            input:nth-child(2), input:focus:first-child{
+                border-width: 0px;
+                outline:0;
+                box-shadow: none;
+                -moz-box-shadow: none;
+                -webkit-box-shadow: none;
+                background-color: transparent;
+            }
+
+            legend{
+                position: relative;
+                top: -25px;
+                left: -60px;
+                font-weight: 900;
+            }
+        }
+
+        .item__el{
+            width: 90%;
+            height: 40px;
+            font-size: 20px;
+            color: black;
+            margin-left: 10px;
+            margin-top: -18px;
+        }
+    }
+
+    .btn-registration{
+        border-radius: 35px;
+        border-width: 0px;
+        background-color: #14141a;
+        padding: 15px 30px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        transition: 0.3s linear;
+        color: #FF7679;
+        &:hover{
+            background-color: #afafaf;
+            border: 1px solid white;
+            color: #14141a;
+        }
+    }
+
+    .btn-into-log{
+        background: none;
+        color: black;
+        font-size: 22px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+
+.active{
+    display: flex;
+}
+
+.red-span{
+    color: #FF7679;
+}
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+    text-align: center;
+    padding: 20px;
+    border-radius: 3px;
+    background-image: url(/img/background_image.jpg);
+    transition: 0.3s all;
+ }
+
+//  .modal {
+   
+//     /* Скрываем окна  */
+//     opacity: 0;
+//     visibility: hidden;
+    
+    
+//     /*  Установаем ширину окна  */
+//     width: 100%;
+//    height: 1600px;
+//    overflow-y: scroll;
+    
+//     // max-width: 500px;
+    
+//     /*  Центрируем и задаем z-index */
+//     position: fixed;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     z-index: 30; /* Должен быть выше чем у подложки*/
+    
+//     /*  Побочные стили   */
+//     box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+//     text-align: center;
+//     padding: 20px;
+//     border-radius: 3px;
+//     background-image: url(/img/background_image.jpg);
+//     // background-color: #fff;
+//     transition: 0.3s all;
+//  }
+
+ body.modal-open {
+    overflow: hidden;
+}
+
+.modal.active,
+.overlay.active{
+   opacity: 1;
+   visibility: visible;
+}
+
+.modal__cross {
+    font-size: 25px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    color: white;
+ }
 
 .container-text-title{
     display: flex;
