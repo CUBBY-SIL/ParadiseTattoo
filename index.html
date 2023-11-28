@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/e4878a7996.js" crossorigin="anonymous"></script>
+<script src="js/show-form.js"></script>
 </head>
 <body>
     <div class="main-container">
@@ -38,14 +39,109 @@
                             }
                         ?>
                     </ul>
-                    <div class="link-enter">
-                        <i class="fa-regular fa-user"></i>
-                        <li class="menu-item"><a href="#" class="menu-link">войти</a></li>
-                    </div>
+
+                    <?php
+                        if (empty($_SESSION['name'])){
+                            echo '<div class="link-enter">
+                                <i class="fa-regular fa-user"></i>
+                                <li class="menu-item"><a href="#" class="menu-link js-open-modal">войти</a></li>
+                                </div>';
+                        }
+                        else {
+                            echo '<div style="display: flex; justify-content: flex-end; margin-left: auto;"><li class="menu-item"><a href="?id=Profile" class="menu-link">Профиль |</a></li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="php/exit.php" class="nav_link">
+                                    Выйти
+                                </a>
+                            </li>
+                        </div>
+                        ';
+                        }
+                    ?>
                 </div>
             </nav>
             <script src="js/drop_down_menu.js"></script>
         </header>
+
+        <div class="modal" data-modal="1">
+            <i class="fa-solid fa-xmark modal__cross js-modal-close"></i>
+
+            <div style="margin: 0 auto;">
+                <div class="container-login authorization active">
+                    <div class="container-login__logo"><img src="img/footer_logo.png" width="100%"></div>
+    
+                    <form method="post" action="php/logPHP.php">
+                        <div class="container-login-item">
+                            <fieldset>
+                                <legend>E-mail</legend>
+                                <input class="item__el" type="email" name="mailLog" required>
+                            </fieldset>
+                        </div>
+    
+                        <div class="container-login-item">
+                            <fieldset>
+                                <legend>Пароль</legend>
+                                <input class="item__el" type="password" name="passLog" required>
+                            </fieldset>
+                        </div>
+    
+                        <button class="btn-login">Войти</button>
+                    </form>
+    
+                    <div class="box_link_reg">
+                        <span class="red-span">У вас нет аккаунта?</span>
+                        <br><br>
+                        <button class="btn-form btn-into-reg" data-modal="reg">Зарегистрироваться</button>
+                    </div>
+                </div>
+
+                <div class="container-registration authorization">
+                    <div class="container-registration__logo"><img src="img/logo_black.png" width="100%"></div>
+                    <form method="post">
+                        <div class="container-registration-item">
+                            <fieldset>
+                                <legend>E-mail</legend>
+                                <input class="item__el" type="email" name="mailReg" required>
+                            </fieldset>
+                        </div>
+                        <div class="container-registration-item">
+                            <fieldset>
+                                <legend>Имя</legend>
+                                <input pattern="[А-Яа-яЁё]{1,20}" class="item__el" type="text" name="nameReg" required>
+                            </fieldset>
+                        </div>
+                        <div class="container-registration-item">
+                            <fieldset>
+                                <legend>Фамилия</legend>
+                                <input pattern="[А-Яа-яЁё]{1,20}" class="item__el" type="text" name="surnReg" required>
+                            </fieldset>
+                        </div>
+                        <div class="container-registration-item">
+                            <fieldset>
+                                <legend>Пароль</legend>
+                                <input pattern="[A-Za-z0-9]{8,16}" class="item__el" type="password" name="surnReg" title="Пароль должен состоять не менее, чем из 8 и не более 16 символов." required>
+                            </fieldset>
+                        </div>
+                        <div class="container-registration-item">
+                            <fieldset>
+                                <legend>Повторите пароль</legend>
+                                <input pattern="[A-Za-z0-9]{8,16}" class="item__el" type="password" name="surnReg" title="Пароль должен состоять не менее, чем из 8 и не более 16 символов." required>
+                            </fieldset>
+                        </div>
+                        
+                        <button class="btn-registration" data-modal="log">Зарегистрироваться</button>
+    
+                    </form>
+                    <div>
+                        <span class="red-span">У вас есть аккаунт?</span>
+                        <br><br>
+                        <button class="btn-form btn-into-log">Авторизоваться</button>
+                    </div>  
+                </div>
+            </div>          
+        </div>
+
+        <div class="overlay" id="overlay-modal"></div>
 
         <section class="content">
             <?php
