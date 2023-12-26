@@ -13,7 +13,6 @@
 <script src="js/show-form.js"></script>
 </head>
 <body>
-    <div class="main-container">
         <header class="header-container">
             <div class="container-logo">
                 <a href="/"><img src="img/main_logo.png" class="main-logo"></a>
@@ -62,7 +61,7 @@
             </nav>
             <script src="js/drop_down_menu.js"></script>
         </header>
-
+    
         <div class="modal" data-modal="1">
             <i class="fa-solid fa-xmark modal__cross js-modal-close"></i>
 
@@ -140,9 +139,7 @@
                 </div>
             </div>          
         </div>
-
-        <div class="overlay" id="overlay-modal"></div>
-
+    
         <section class="content">
             <?php
                 include($fileContent);
@@ -152,7 +149,7 @@
         <footer>
             <div class="footer-container">
                 <div class="cell-logo">
-                    <a><img src="img/footer_logo.png" class="footer-logo"></a>
+                    <a href="/"><img src="img/footer_logo.png" class="footer-logo"></a>
                 </div>
                 <div class="main-cell">
                     <p class="cell-title">контакты</p>
@@ -172,14 +169,13 @@
                 </div>
                 <div class="main-cell">
                     <p class="cell-title">меню</p>
-                    <li><a href="#" class="cell-information">Мастера</a></li>
-                    <li><a href="#" class="cell-information">Работы</a></li>
-                    <li><a href="#" class="cell-information">Стили тату</a></li>
-                    <li><a href="#" class="cell-information">Записаться</a></li>
-                    <li><a href="#" class="cell-information">Удаление тату</a></li>
+                    <li><a href="?id=1" class="cell-information">Мастера</a></li>
+                    <li><a href="?id=2" class="cell-information">Работы</a></li>
+                    <li><a href="?id=3" class="cell-information">Стили тату</a></li>
+                    <li><a href="?id=4" class="cell-information">Записаться</a></li>
+                    <li><a href="?id=5" class="cell-information">Удаление тату</a></li>
                 </div>
             </div>
         </footer>
-    </div>
 </body>
 </html>

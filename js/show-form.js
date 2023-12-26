@@ -10,23 +10,18 @@ window.addEventListener('load', function(){
     })
 
     let modalButton = document.querySelector('.js-open-modal');
-    let overlay = document.querySelector('#overlay-modal');
     let closeButtons = document.querySelector('.js-modal-close');
     let modalElem = document.querySelector('.modal');
     let body = document.body;
 
     modalButton.addEventListener('click', function(e){
         body.classList.add('modal-open');
-
         modalElem.classList.add('active');
-        overlay.classList.add('active');
     })
 
     closeButtons.addEventListener('click', function(){
-
         body.classList.remove('modal-open');
         modalElem.classList.remove('active');
-        overlay.classList.remove('active');
     })
 
     function showForm(target){
