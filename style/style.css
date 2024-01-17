@@ -9,6 +9,7 @@ a {
   text-decoration: none; }
 
 body {
+  background-color: #262732;
   background-image: url(/img/background_image.jpg);
   background-position: center;
   min-height: 100vh;
@@ -38,7 +39,8 @@ body {
   display: grid;
   grid-template-columns: auto auto;
   padding: 0 20px;
-  position: relative; }
+  position: relative;
+  margin: 0 auto; }
   .inner-menu .toggle-btn {
     display: none;
     color: #fff;
