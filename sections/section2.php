@@ -1,9 +1,8 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows1251">
 <title><?php echo $title; ?></title>
-
 </head>
     <body>
         <h2 class="content-tittle">Работы наших тату мастеров</h2>

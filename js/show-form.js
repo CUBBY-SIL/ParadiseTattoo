@@ -15,12 +15,12 @@ window.addEventListener('load', function(){
     let body = document.body;
 
     modalButton.addEventListener('click', function(e){
-        body.classList.add('modal-open');
+        body.classList.add('hide-scrollbar');
         modalElem.classList.add('active');
     })
 
     closeButtons.addEventListener('click', function(){
-        body.classList.remove('modal-open');
+        body.classList.remove('hide-scrollbar');
         modalElem.classList.remove('active');
     })
 

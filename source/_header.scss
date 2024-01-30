@@ -1,0 +1,114 @@
+.header-container{
+    background-color: rgb(38, 39, 50);
+}
+.container-logo{
+    background-image: url(/img/bg_header.png);
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+}
+.main-logo{
+    width: 100%;
+}
+.header-menu-container{
+    background-color: rgb(33, 34, 41);
+    border-bottom: 1px solid #dadada;
+    border-top: 1px solid #dadada;
+}
+.inner-menu{
+    max-width: 1350px;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 20px;
+    position: relative;
+    margin: 0 auto;
+    .toggle-btn{
+        .toggle-icon{
+            cursor: pointer;
+        }
+        display: none;
+        color: #fff;
+        font-size: 28px;
+        @media(max-width:390px){
+            font-size: 24;
+        }
+    }
+    .menu-list{
+        display: flex;
+        justify-content: space-around;
+        @media(max-width:950px){
+            display: none;
+        }
+    }
+    .link-enter{
+        color: #fff;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    @media(max-width:950px){
+        padding: 0 80px;
+        .toggle-btn{
+        display: flex;
+        align-items: center;
+        }
+    }
+    @media(max-width:600px){
+        padding: 0 50px;
+    }
+    @media(max-width:425px){
+        padding: 0 30px;
+    }
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    height: 0px;
+    top: 51px;
+    left: 80px;
+    overflow: hidden;
+    transition: all 0.5s;
+    .menu-item{
+        width: 400px;
+        background-color: rgba(33, 34, 41, 0.849);
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+        display: flex;
+        justify-content: center;
+        &:last-child{
+            border-radius: 0 0 15px 15px;
+            border-bottom: 3px solid #FF7679;
+        }
+        @media(max-width:550px){
+            width: 100%;
+        }
+    }
+    @media(max-width:950px){
+            display: block;
+    }
+    @media(max-width:550px){
+        width: 100%;
+        left: 0;
+    }
+}
+.open{
+    height: 258px;
+}
+.menu-item{
+    list-style: none;
+    padding: 16px 0px;
+    .menu-link{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 800;
+        letter-spacing: .8px;
+        color: white;
+        padding-left: 10px;
+        transition: all 0.6s;
+    }
+    &:hover{
+        a{color: #FF7679;}
+    } 
+}

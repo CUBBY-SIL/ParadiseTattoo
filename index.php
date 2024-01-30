@@ -18,7 +18,7 @@
         if (file_exists($fileContentTemp)){
             //Если файл существует, то меняем значение переменной, отвечающей за путь к включаемому файлу и формируем значение переменной, значение которой в последующем включается в заголовок страницы.
             $fileContent = $fileContentTemp;
-            $title.= ' | '.getTitle($GLOBALS['arrContent'], $idContent);
+            $title.= ' '.getTitle($GLOBALS['arrContent'], $idContent);
         }
         else{
             $fileContent = ERR_FILE_NO_EXISTS;

@@ -1,9 +1,8 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows1251">
 <title><?php echo $title; ?></title>
-
 </head>
     <body>
         <h1>Студия художественной татуировки<br> в центре Новосибирска</h1>
@@ -79,34 +78,7 @@
                 <div class="elements-item-information">
                     <p class="elements-item-information-text">
                         <b>Высокий уровень<br></b>
-                        исполнения, огромный опыт и <br>профессиональный сервис
-                    </p>
-                </div><!-- DIV ELEMENTS ITEM INFORMATION -->
-            </div><!-- DIV ELEMENTS ITEM -->
-            <div class="elements-item">
-                <div class="elements-item-img"><img src="img/icons-shield.png"></div>
-                <div class="elements-item-information">
-                    <p class="elements-item-information-text">
-                        <b>Высокий уровень<br></b>
-                        исполнения, огромный опыт и <br>профессиональный сервис
-                    </p>
-                </div><!-- DIV ELEMENTS ITEM INFORMATION -->
-            </div><!-- DIV ELEMENTS ITEM -->
-            <div class="elements-item">
-                <div class="elements-item-img"><img src="img/icons-brush.png"></div>
-                <div class="elements-item-information">
-                    <p class="elements-item-information-text">
-                        <b>Профессиональное<br>
-                        оборудование</b> и <br>краска высшего качества от <br>мировых брендов
-                    </p>
-                </div><!-- DIV ELEMENTS ITEM INFORMATION -->
-            </div><!-- DIV ELEMENTS ITEM -->
-            <div class="elements-item">
-                <div class="elements-item-img"><img src="img/icons-macbook.png"></div>
-                <div class="elements-item-information">
-                    <p class="elements-item-information-text">
-                        <b>Приемлемые цены</b><br>
-                        которые не ударят по вашему<br> бюджету, плюс постоянные<br> акции и скидки
+                        исполнения, огромный опыт и профессиональный сервис
                     </p>
                 </div><!-- DIV ELEMENTS ITEM INFORMATION -->
             </div><!-- DIV ELEMENTS ITEM -->
@@ -115,7 +87,34 @@
                 <div class="elements-item-information">
                     <p class="elements-item-information-text">
                         <b>Профессиональные мастера</b><br>
-                        с художественным образованием<br> <b>знающие</b> свое <b>дело</b>
+                        с художественным образованием <b>знающие</b> свое <b>дело</b>
+                    </p>
+                </div><!-- DIV ELEMENTS ITEM INFORMATION -->
+            </div><!-- DIV ELEMENTS ITEM -->
+            <div class="elements-item">
+                <div class="elements-item-img"><img src="img/icons-brush.png"></div>
+                <div class="elements-item-information">
+                    <p class="elements-item-information-text">
+                        <b>Профессиональное<br>
+                        оборудование</b> и краска высшего качества от мировых брендов
+                    </p>
+                </div><!-- DIV ELEMENTS ITEM INFORMATION -->
+            </div><!-- DIV ELEMENTS ITEM -->
+            <div class="elements-item">
+                <div class="elements-item-img"><img src="img/icons-macbook.png"></div>
+                <div class="elements-item-information">
+                    <p class="elements-item-information-text">
+                        <b>Приемлемые цены</b><br>
+                        которые не ударят по вашему бюджету, плюс постоянные акции и скидки
+                    </p>
+                </div><!-- DIV ELEMENTS ITEM INFORMATION -->
+            </div><!-- DIV ELEMENTS ITEM -->
+            <div class="elements-item">
+                <div class="elements-item-img"><img src="img/icons-shield.png"></div>
+                <div class="elements-item-information">
+                    <p class="elements-item-information-text">
+                        <b>Высокий уровень<br></b>
+                        исполнения, огромный опыт и профессиональный сервис
                     </p>
                 </div><!-- DIV ELEMENTS ITEM INFORMATION -->
             </div><!-- DIV ELEMENTS ITEM -->

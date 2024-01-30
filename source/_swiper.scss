@@ -1,0 +1,27 @@
+.swiper{
+    width: 100%;
+    padding: 40px 30px;
+    padding-top: 0;
+    .swiper-button-prev::after,
+    .swiper-button-next::after{
+        color: #FF7679;
+        font-size: 50px;
+        @media(max-width:1045px){
+            margin-bottom: 45px;
+        }
+    }
+    .swiper-pagination-bullet{
+        width: 15px;
+        height: 15px;
+        background-color: #FF7679;
+    }
+    .slider-img{
+        width: 80%;
+        @media(max-width:1045px){
+            width: 75%;
+        }
+        @media(max-width:870px){
+            width: 75%;
+        }
+    }
+}

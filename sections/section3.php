@@ -1,9 +1,8 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows1251">
 <title><?php echo $title; ?></title>
-
 </head>
     <body>
         <h2 class="content-tittle">Наши мастера работают<br>
@@ -29,7 +28,7 @@
             </div><!-- DIV BOX-STYLE -->
             <div class="box-style celtic">
                 <div class="box-style-tittle">Кельтика</div>
-                <div class="box-style-information">Любите мистику, богатую истори. и хотите, 
+                <div class="box-style-information">Любите мистику, богатую историю и хотите, 
                     чтобы тату было со смыслом?
                 </div>
                 <a href="?id=Celtic" class="link-read-style"><div class="box-style-button">Читать</div></a>

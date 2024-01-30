@@ -1,9 +1,8 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows1251">
 <title><?php echo $title; ?></title>
-
 </head>
     <body>
         <?php
@@ -23,25 +22,22 @@
                     вам требуется заполнить анкету ниже.
                 </p>
         
-                <div class="box_anketa">
-            
-                    <div class="logo"><img src="../img/logo1.png" width="225"></div>
-
-
+                <div class="note-container">
+                    <div class="logo"><img src="./img/footer_logo.png"></div>
                     <form method="post" action="sections/addPHP.php">
 
-                        <fieldset class="fld_anketa">
-                            <legend style="margin-left: -65px">Номер телефона</legend>
-                            <input class="intp_aketa" type="text" name="phoneClient" required>
-                        </fieldset>
-                        
-
-                        
-                        <div class="text_date">Дата записи</div>
-                        <fieldset class="fld_anketa" style="background-color: white;">
-                            <legend style="margin-left: -80px; color: white">.</legend>
-                            <input class="intp_date" type="date" name="dateReg" required>
-                        </fieldset>
+                        <div class="container-login-item">
+                            <fieldset>
+                                <legend>Номер телефона</legend>
+                                <input class="item__el" type="tel" name="phoneClient" required>
+                            </fieldset>
+                        </div>
+                        <div class="container-note-item">
+                            <fieldset class="date-container">
+                                <legend>Дата записи</legend>
+                                <input class="inpt-date" type="date" name="dateReg" required>
+                            </fieldset>
+                        </div>
                         
                         <br>
                         
@@ -77,8 +73,8 @@
                         </select>
                         </div>
 
-                        <br><div class="box_butt" style="text-align: center;"><input type="submit" class="butt_enter" value="Записаться"></div>
-
+                        <br>
+                        <button class="btn-login">Записаться</button>
                     </form>
                 </div>
             ';}
