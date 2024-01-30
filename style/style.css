@@ -21,6 +21,51 @@ body {
   overflow: hidden;
   scrollbar-gutter: stable; }
 
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/montserrat-v26-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+/* montserrat-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/montserrat-v26-latin-600.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/montserrat-v26-latin-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+/* montserrat-800 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: url("./fonts/montserrat-v26-latin-800.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+/* montserrat-900 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  src: url("./fonts/montserrat-v26-latin-900.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
 .swiper {
   width: 100%;
   padding: 40px 30px;
@@ -304,7 +349,8 @@ body {
   top: 51px;
   left: 80px;
   overflow: hidden;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  z-index: 10; }
   .dropdown-menu .menu-item {
     width: 400px;
     background-color: rgba(33, 34, 41, 0.849);
@@ -336,7 +382,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 600;
     letter-spacing: .8px;
     color: white;
     padding-left: 10px;
