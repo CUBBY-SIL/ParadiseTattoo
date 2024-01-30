@@ -1,0 +1,65 @@
+.note-container{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 35px;
+    background: #14141a;
+    border: 1px solid #FF7679;
+    padding: 10px;
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-login{
+        margin-top: 15px;
+    }
+}
+.logo{
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 50px;
+    
+    img{
+        max-width: 250px;
+    }
+}
+.container-note-item{
+    width: 100%;
+    max-width: 250px;
+    height: 40px;
+    color: #FF7679;
+    margin-bottom: 40px;
+    border-radius: 50px;
+    font-size: 18px;
+    border: 1px white solid;
+    background-color: white;
+    fieldset{
+        position: relative;
+        input:nth-child(2), input:focus:first-child{
+            width: 90%;
+            border-width: 0px;
+            outline:0;
+            box-shadow: none;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            position: absolute;
+            left: 15px;
+            top: 10px;
+        }
+        legend{
+            position: absolute;
+            top: -30px;
+            left: 15px;
+        }
+    }
+}
+
+.text_time{
+    color: #FF7679;
+    font-size: 18px;
+}
+.inpt_time{
+    width: 150px;
+    height: 30px;
+}
