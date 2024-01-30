@@ -1,181 +1,186 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows1251">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <title><?php echo $title; ?></title>
+<link rel="icon" href="./img/favicon.png">
 <link rel="stylesheet" href="style/swiper-bundle.min.css">
 <link rel="stylesheet" href="style/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/e4878a7996.js" crossorigin="anonymous"></script>
-<script src="js/show-form.js"></script>
+<script src="./js/show-form.js"></script>
 </head>
-<body>
-        <header class="header-container">
-            <div class="container-logo">
-                <a href="/"><img src="img/main_logo.png" class="main-logo"></a>
-            </div>
-            
+<body class="hide-scrollbar">
+    <div class="preloader">
+        <img src="./img/loader.svg">
+    </div>
+    <header class="header-container">
+        <div class="container-logo">
+            <a href="/"><img alt="logo" title="paradise tattoo" src="img/main_logo.png" class="main-logo"></a>
+        </div>
 
-            <nav class="header-menu-container">
-                <div class="inner-menu">
-                    <div class="toggle-btn">
-                        <i class="fa-solid fa-bars toggle-icon"></i>
-                    </div>
-                    <div class="dropdown-menu">
-                        <?php
-                            foreach ($GLOBALS['arrContent'] as $key=>$value) {
-                                echo '<li class="menu-item"><a href="?'.GET_ID_SECTION.'='.$key.'" class="menu-link">'.$value.'</a></li>';
-                            }
-                        ?>
-                    </div>
-                    <ul class="menu-list">
-                        <?php
-                            foreach ($GLOBALS['arrContent'] as $key=>$value) {
-                                echo '<li class="menu-item"><a href="?'.GET_ID_SECTION.'='.$key.'" class="menu-link">'.$value.'</a></li>';
-                            }
-                        ?>
-                    </ul>
-
+        <nav class="header-menu-container">
+            <div class="inner-menu">
+                <div class="toggle-btn">
+                    <i class="fa-solid fa-bars toggle-icon"></i>
+                </div>
+                <div class="dropdown-menu">
                     <?php
-                        if (empty($_SESSION['name'])){
-                            echo '<div class="link-enter">
-                                <i class="fa-regular fa-user"></i>
-                                <li class="menu-item"><a href="#" class="menu-link js-open-modal">войти</a></li>
-                                </div>';
-                        }
-                        else {
-                            echo '<div style="display: flex; justify-content: flex-end; margin-left: auto;"><li class="menu-item"><a href="?id=Profile" class="menu-link">Профиль |</a></li>
-                            <li class="menu-item">
-                                <a class="menu-link" href="php/exit.php" class="nav_link">
-                                    Выйти
-                                </a>
-                            </li>
-                        </div>
-                        ';
+                        foreach ($GLOBALS['arrContent'] as $key=>$value) {
+                            echo '<li class="menu-item"><a href="?'.GET_ID_SECTION.'='.$key.'" class="menu-link">'.$value.'</a></li>';
                         }
                     ?>
                 </div>
-            </nav>
-            <script src="js/drop_down_menu.js"></script>
-        </header>
-    
-        <div class="modal" data-modal="1">
-            <i class="fa-solid fa-xmark modal__cross js-modal-close"></i>
+                <ul class="menu-list">
+                    <?php
+                        foreach ($GLOBALS['arrContent'] as $key=>$value) {
+                            echo '<li class="menu-item"><a href="?'.GET_ID_SECTION.'='.$key.'" class="menu-link">'.$value.'</a></li>';
+                        }
+                    ?>
+                </ul>
 
-            <div style="margin: 0 auto;">
-                <div class="container-login authorization active">
-                    <div class="container-login__logo"><img src="img/footer_logo.png" width="100%"></div>
-    
-                    <form method="post" action="php/logPHP.php">
-                        <div class="container-login-item">
-                            <fieldset>
-                                <legend>E-mail</legend>
-                                <input class="item__el" type="email" name="mailLog" required>
-                            </fieldset>
-                        </div>
-    
-                        <div class="container-login-item">
-                            <fieldset>
-                                <legend>Пароль</legend>
-                                <input class="item__el" type="password" name="passLog" required>
-                            </fieldset>
-                        </div>
-    
-                        <button class="btn-login">Войти</button>
-                    </form>
-    
-                    <div class="box_link_reg">
-                        <span class="red-span">У вас нет аккаунта?</span>
-                        <br><br>
-                        <button class="btn-form btn-into-reg" data-modal="reg">Зарегистрироваться</button>
+                <?php
+                    if (empty($_SESSION['name'])){
+                        echo '<div class="link-enter">
+                            <i class="fa-regular fa-user"></i>
+                            <li class="menu-item"><a href="#" class="menu-link js-open-modal">войти</a></li>
+                            </div>';
+                    }
+                    else {
+                        echo '<div style="display: flex; justify-content: flex-end; margin-left: auto;"><li class="menu-item"><a href="?id=Profile" class="menu-link">Профиль |</a></li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="php/exit.php" class="nav_link">
+                                Выйти
+                            </a>
+                        </li>
                     </div>
-                </div>
+                    ';
+                    }
+                ?>
+            </div>
+        </nav>
+        <script src="js/drop_down_menu.js"></script>
+    </header>
 
-                <div class="container-registration authorization">
-                    <div class="container-registration__logo"><img src="img/logo_black.png" width="100%"></div>
-                    <form method="post">
-                        <div class="container-registration-item">
-                            <fieldset>
-                                <legend>E-mail</legend>
-                                <input class="item__el" type="email" name="mailReg" required>
-                            </fieldset>
-                        </div>
-                        <div class="container-registration-item">
-                            <fieldset>
-                                <legend>Имя</legend>
-                                <input pattern="[А-Яа-яЁё]{1,20}" class="item__el" type="text" name="nameReg" required>
-                            </fieldset>
-                        </div>
-                        <div class="container-registration-item">
-                            <fieldset>
-                                <legend>Фамилия</legend>
-                                <input pattern="[А-Яа-яЁё]{1,20}" class="item__el" type="text" name="surnReg" required>
-                            </fieldset>
-                        </div>
-                        <div class="container-registration-item">
-                            <fieldset>
-                                <legend>Пароль</legend>
-                                <input pattern="[A-Za-z0-9]{8,16}" class="item__el" type="password" name="surnReg" title="Пароль должен состоять не менее, чем из 8 и не более 16 символов." required>
-                            </fieldset>
-                        </div>
-                        <div class="container-registration-item">
-                            <fieldset>
-                                <legend>Повторите пароль</legend>
-                                <input pattern="[A-Za-z0-9]{8,16}" class="item__el" type="password" name="surnReg" title="Пароль должен состоять не менее, чем из 8 и не более 16 символов." required>
-                            </fieldset>
-                        </div>
-                        
-                        <button class="btn-registration" data-modal="log">Зарегистрироваться</button>
-    
-                    </form>
-                    <div>
-                        <span class="red-span">У вас есть аккаунт?</span>
-                        <br><br>
-                        <button class="btn-form btn-into-log">Авторизоваться</button>
-                    </div>  
-                </div>
-            </div>          
-        </div>
-    
-        <section class="content">
-            <?php
-                include($fileContent);
-            ?>
-        </section>
+    <div class="modal" data-modal="1">
+        <i class="fa-solid fa-xmark modal__cross js-modal-close"></i>
 
-        <footer>
-            <div class="footer-container">
-                <div class="cell-logo">
-                    <a href="/"><img src="img/footer_logo.png" class="footer-logo"></a>
-                </div>
-                <div class="main-cell">
-                    <p class="cell-title">контакты</p>
-                    <p class="cell-information">+7 951 388 88 82</p>
-                    <p class="cell-information">paradise.tattoo@mail.ru</p>
+        <div style="margin: 0 auto;">
+            <div class="container-login authorization active">
+                <div class="container-login__logo"><img src="img/footer_logo.png" width="100%"></div>
 
-                    <div class="cell-links">
-                        <a href="#"><img src="img/social-media-circled-vk.png" class="footer-social-link"></a>
-                        <a href="#"><img src="img/social-media-circled-whatsapp.png" class="footer-social-link"></a>
-                        <a href="#"><img src="img/social-media-circled-instagram.png" class="footer-social-link"></a>
+                <form method="post" action="php/logPHP.php">
+                    <div class="container-login-item">
+                        <fieldset>
+                            <legend>E-mail</legend>
+                            <input class="item__el" type="email" name="mailLog" required>
+                        </fieldset>
                     </div>
-                </div>
-                <div class="main-cell">
-                    <p class="cell-title">где мы находимся</p>
-                    <p class="cell-information">ул. Орджоникидзе 47, Новосибирск</p>
-                    <p class="cell-information">12:00 – 21:00 без выходных</p>
-                </div>
-                <div class="main-cell">
-                    <p class="cell-title">меню</p>
-                    <li><a href="?id=1" class="cell-information">Мастера</a></li>
-                    <li><a href="?id=2" class="cell-information">Работы</a></li>
-                    <li><a href="?id=3" class="cell-information">Стили тату</a></li>
-                    <li><a href="?id=4" class="cell-information">Записаться</a></li>
-                    <li><a href="?id=5" class="cell-information">Удаление тату</a></li>
+
+                    <div class="container-login-item">
+                        <fieldset>
+                            <legend>Пароль</legend>
+                            <input class="item__el" type="password" name="passLog" required>
+                        </fieldset>
+                    </div>
+
+                    <button class="btn-login">Войти</button>
+                </form>
+
+                <div class="box_link_reg">
+                    <span class="red-span">У вас нет аккаунта?</span>
+                    <br><br>
+                    <button class="btn-form btn-into-reg" data-modal="reg">Зарегистрироваться</button>
                 </div>
             </div>
-        </footer>
+
+            <div class="container-registration authorization">
+                <div class="container-registration__logo"><img src="img/logo_black.png" width="100%"></div>
+                <form method="post">
+                    <div class="container-registration-item">
+                        <fieldset>
+                            <legend>E-mail</legend>
+                            <input class="item__el" type="email" name="mailReg" required>
+                        </fieldset>
+                    </div>
+                    <div class="container-registration-item">
+                        <fieldset>
+                            <legend>Имя</legend>
+                            <input pattern="[А-Яа-яЁё]{1,20}" class="item__el" type="text" name="nameReg" required>
+                        </fieldset>
+                    </div>
+                    <div class="container-registration-item">
+                        <fieldset>
+                            <legend>Фамилия</legend>
+                            <input pattern="[А-Яа-яЁё]{1,20}" class="item__el" type="text" name="surnReg" required>
+                        </fieldset>
+                    </div>
+                    <div class="container-registration-item">
+                        <fieldset>
+                            <legend>Пароль</legend>
+                            <input pattern="[A-Za-z0-9]{8,16}" class="item__el" type="password" name="surnReg" title="Пароль должен состоять не менее, чем из 8 и не более 16 символов." required>
+                        </fieldset>
+                    </div>
+                    <div class="container-registration-item">
+                        <fieldset>
+                            <legend>Повторите пароль</legend>
+                            <input pattern="[A-Za-z0-9]{8,16}" class="item__el" type="password" name="surnReg" title="Пароль должен состоять не менее, чем из 8 и не более 16 символов." required>
+                        </fieldset>
+                    </div>
+                    
+                    <button class="btn-registration" data-modal="log">Зарегистрироваться</button>
+
+                </form>
+                <div>
+                    <span class="red-span">У вас есть аккаунт?</span>
+                    <br><br>
+                    <button class="btn-form btn-into-log">Авторизоваться</button>
+                </div>  
+            </div>
+        </div>          
+    </div>
+
+    <section class="content">
+        <?php
+            include($fileContent);
+        ?>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="cell-logo">
+                <a href="/"><img src="img/footer_logo.png" class="footer-logo"></a>
+            </div>
+            <div class="main-cell">
+                <p class="cell-title">контакты</p>
+                <p class="cell-information">+7 951 388 88 82</p>
+                <p class="cell-information">paradise.tattoo@mail.ru</p>
+
+                <div class="cell-links">
+                    <a href="#"><img src="img/social-media-circled-vk.png" class="footer-social-link"></a>
+                    <a href="#"><img src="img/social-media-circled-whatsapp.png" class="footer-social-link"></a>
+                    <a href="#"><img src="img/social-media-circled-instagram.png" class="footer-social-link"></a>
+                </div>
+            </div>
+            <div class="main-cell">
+                <p class="cell-title">где мы находимся</p>
+                <p class="cell-information">ул. Орджоникидзе 47, Новосибирск</p>
+                <p class="cell-information">12:00 – 21:00 без выходных</p>
+            </div>
+            <div class="main-cell">
+                <p class="cell-title">меню</p>
+                <li><a href="?id=1" class="cell-information">Мастера</a></li>
+                <li><a href="?id=2" class="cell-information">Работы</a></li>
+                <li><a href="?id=3" class="cell-information">Стили тату</a></li>
+                <li><a href="?id=4" class="cell-information">Записаться</a></li>
+                <li><a href="?id=5" class="cell-information">Удаление тату</a></li>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/loader.js"></script>
 </body>
 </html>
