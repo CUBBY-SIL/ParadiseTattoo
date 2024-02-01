@@ -5,6 +5,7 @@
 ![CSS3](https://img.shields.io/badge/-CSS3-1572b6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-f7df1e?logo=javaScript&logoColor=black)
 ![PHP](https://img.shields.io/badge/PHP-blue?style=flat&logo=PHP&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-c66394?style=flat&logo=SASS&logoColor=white)
 
 ## Библиотеки
 ![Swiper.js](https://img.shields.io/badge/Swiper.js-blue?style=flat&logoColor=white) - слайдер
